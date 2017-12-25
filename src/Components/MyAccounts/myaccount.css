@@ -1,0 +1,50 @@
+.acc_card_main{
+    width: 220px;
+    height: 130px;
+    background-color: #5963f0;
+    border-radius: 5px;
+    color: #FFFFFF
+}
+.acc_card_secondary{
+    width: 200px;
+    height: 114px;
+    background-color: #5963f0;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.accounts_container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-width: 300px;
+}
+.card_container{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.acc_name{
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 15px;
+    font-size: 14px;
+}
+.card_number{
+    padding-left: 15px;
+    padding-top: 14px;
+    text-align: left;
+}
+.card_add_details{
+    font-size: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-right: 15px;
+    margin-top: 25px;
+    padding-left: 15px;
+   
+}
+.card_type{
+    color: #abc5ff;
+}

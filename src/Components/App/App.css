@@ -1,0 +1,24 @@
+.App {
+  display: flex;
+  flex-flow: row;
+  text-align: center;
+}
+
+.body {
+  display: flex;
+  flex-flow: column;
+  margin-left: 60px;
+  width: calc(100% - 60px);
+}
+
+body{
+  background-color: #f7f8fa;
+}
+
+.secondary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-top: 35px;
+}

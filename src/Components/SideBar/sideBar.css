@@ -1,0 +1,61 @@
+.sidebar {
+    background-color: #4464f2;
+    width: 60px;
+    position: fixed;
+    -ms-flex-order: 1;
+    order: 1;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+.count{
+    margin-top: 42px;
+    margin-left: 35px;
+    height: 25px;
+    width: 25px;
+    background-color: #4464f2;
+}
+.count_number{
+    color: #ffffff;
+    font-size: 10px;
+    padding-top: 6px;
+}
+.profilePic {
+    background-image: url("./images/profile_pic.jpg");
+    height: 67px;
+    width: 60px;
+    background-size: 60px 67px;
+    background-repeat: no-repeat;
+}
+
+.whiteSpace {
+    background-color: #f7f8fa;
+    height: 70px;
+    width: 60px;
+}
+
+.speedIcon {
+    background-image: url("./images/speed.svg");
+}
+.arrowIcon {
+    background-image: url("./images/arrow.svg");
+}
+.settingsIcon{
+    background-image: url("./images/settings.svg");
+}
+.icon_group{
+    
+}
+
+.value_green{
+    color: green;
+}
+.speedIcon ,.arrowIcon ,.settingsIcon{
+    height: 50px;
+    width: 30px;
+    background-position: 0px 22px;
+    margin-top: 20px;
+    margin: auto;
+    background-size: 30px 20px;
+    background-repeat: no-repeat;
+}

@@ -13,7 +13,7 @@ class MyAccounts extends Component {
   render() {
     return (
       <div className="accounts_container">
-        <div className="sub_titles">MyAccounts<span></span></div>
+        <div className="sub_titles_acc">My accounts<span></span></div>
         <div className="card_container">
         <StyleRoot>
           <div className="acc_card_main" style={styles.bounce}>
@@ -37,7 +37,7 @@ class MyAccounts extends Component {
             <div></div>
             <div></div>
           </div>
-          <div className="acc_card_secondary" style={styles.bounce}>
+          <div className="acc_card_secondary_half" style={styles.bounce}>
             <div className="acc_name">Bitflinex</div>
             <div className="card_number">1BvB **** **** ****</div>
             <div className ="card_add_details">

@@ -3,7 +3,9 @@
     height: 130px;
     background-color: #5963f0;
     border-radius: 5px;
-    color: #FFFFFF
+    color: #FFFFFF;
+    box-shadow: 5px 5px 8px #b9bcee;
+    margin-right: 10px;
 }
 .acc_card_secondary{
     width: 200px;
@@ -11,6 +13,17 @@
     background-color: #5963f0;
     border-radius: 5px;
     color: #FFFFFF;
+    box-shadow: 5px 5px 8px #b9bcee;
+    margin-right: 10px;
+}
+.acc_card_secondary_half{
+    width: 200px;
+    height: 114px;
+    background-color: #5963f0;
+    border-radius: 5px;
+    color: #FFFFFF;
+    box-shadow: 5px 5px 8px #b9bcee;
+    margin-right: -100px;
 }
 .accounts_container {
     display: flex;
@@ -18,8 +31,22 @@
     width: 50%;
     min-width: 300px;
 }
+@media all and (max-width: 760px) {
+    .accounts_container {
+        width: 100%;
+    }
+}
+.sub_titles_acc{
+    font-size: 14px;
+    font-weight: 600;
+    -ms-flex-item-align: left;
+    align-self: left;
+    padding-left: 10px;
+}
 .card_container{
+    overflow-x: hidden;
     margin-top: 25px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
 }

@@ -38,7 +38,7 @@ class Balance extends Component {
             <div className="readings">
               <div className="btc_text">Your today revenue</div>
               <div className="revenue_text">+ $ <span className="revenue_text_value">195</span></div>
-              <LineChart width={100} height={50} data={data}>
+              <LineChart width={70} height={40} data={data}>
                  <Line type='monotone' dataKey='pv'dot={false} stroke='#4CAF50' strokeWidth={1} />
               </LineChart>
               <span className="graph_text">1.06 %</span>
@@ -46,7 +46,7 @@ class Balance extends Component {
             <div className="readings">
               <div className="btc_text">Current order volume</div>
               <div className="revenue_text"> $ <span className="revenue_text_value">3763</span></div>
-              <LineChart width={100} height={50} data={data}>
+              <LineChart width={70} height={40} data={data}>
                  <Line type='monotone' dataKey='pv'dot={false} stroke='#4CAF50' strokeWidth={1} />
               </LineChart>
               <span className="graph_text">1.06 %</span>

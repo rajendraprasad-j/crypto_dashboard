@@ -10,6 +10,12 @@
     align-self: left;
 }
 
+@media all and (max-width: 760px) {
+    .balance_container {
+        width: 90%
+    }
+}
+
 .readings_container {
     display: flex;
     margin-top: 20px;
@@ -22,7 +28,7 @@
 .readings {
     width: 40%;
     margin-bottom: 20px;
-    min-width: 180px;
+    min-width: 150px;
     height: 75px;
 }
 
@@ -31,7 +37,6 @@
     font-size: 12px;
     padding: 5px;
     color: #90A4AE;
-
 }
 
 .btc_value {
@@ -39,7 +44,7 @@
 }
 
 .options_box {
-    width: 50px;
+    width: 45px;
     height: 55px;
     background-color: #FFFFFF;
     margin-top: 10px;
@@ -60,7 +65,8 @@
     background-size: 20px 16px;
     background-repeat: no-repeat;
 }
-.down_arrow{
+
+.down_arrow {
     background-image: url("./images/long-arrow-pointing-up.svg");
     transform: rotate(180deg);
     height: 30px;
@@ -71,12 +77,14 @@
     background-size: 20px 16px;
     background-repeat: no-repeat;
 }
+
 .options_box_text {
     color: blue;
     font-size: 12px;
     margin-left: -10px;
 }
-.order{
+
+.order {
     background-image: url("./images/menu.svg");
     height: 30px;
     width: 30px;
@@ -86,14 +94,16 @@
     background-size: 24px 16px;
     background-repeat: no-repeat;
 }
-.revenue_text{
+
+.revenue_text {
     text-align: left;
 }
 
-.revenue_text_value{
+.revenue_text_value {
     font-size: 28px;
 }
-.graph_text{
+
+.graph_text {
     font-size: 12px;
     margin-top: -35px;
     display: block;

@@ -52,7 +52,6 @@ class Charts extends Component {
 class CustomizedCursor extends Component {
 
   render() {
-    const { active } = this.props;
     return (
       <div className="recharts-tooltip-cursor">
         <line strokeDasharray="5, 5" x1="10" y1="10" x2="190" y2="10" />
@@ -63,10 +62,6 @@ class CustomizedCursor extends Component {
 class CustomTooltip extends Component {
 
   render() {
-    const { active } = this.props;
-
-    // if (active) {
-    const { payload, label } = this.props;
     return (
       <div className="tooltip">
         <div className="custom-tooltip">
@@ -75,8 +70,6 @@ class CustomTooltip extends Component {
         </div>
       </div>
     );
-    // }
-    // return null;
   }
 }
 class CustomTickText extends Component {

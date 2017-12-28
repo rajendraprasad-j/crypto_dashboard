@@ -3,6 +3,8 @@ import SideBar from '../SideBar/sideBar'
 import Header from '../Header/header'
 import Balance from '../Balance/Balance';
 import MyAcconts from '../MyAccounts/MyAccounts'
+import Charts from '../Charts/Charts'
+import Footer from '../Footer/Footer'
 import './App.css';
 
 class App extends Component {
@@ -15,6 +17,12 @@ class App extends Component {
         <div className="secondary">
         <Balance />
         <MyAcconts />
+      </div>
+      <div>
+        <Charts />
+      </div>
+      <div>
+        <Footer />
       </div>
       </div>
       

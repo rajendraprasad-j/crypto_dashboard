@@ -8,6 +8,7 @@
     margin-right: 10px;
 }
 .acc_card_secondary{
+    min-width: 200px;
     width: 200px;
     height: 114px;
     background-color: #5963f0;

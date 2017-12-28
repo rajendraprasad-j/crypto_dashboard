@@ -1,0 +1,89 @@
+.chart-header{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.chart-container{
+    margin-top: 15px;
+}
+.chart-title{
+    text-align: left;
+    font-size: 12px;
+    padding-left: 60px;
+    font-weight: 600;
+}
+.recharts-active-dot{
+    stroke: rgb(211, 35, 46);
+}
+.custom-tooltip{
+    font-size: 10px;
+    margin-left: -1px;
+    padding-left: 2px;
+    width: 30px;
+    border-left: 1px solid red;
+    margin-top: -26px;
+}
+.tooltip{
+    margin-left: -9px;
+    width: 30px;
+    height: 200px;
+    border-left: 1px dashed #BDBDBD;
+}
+.chart-subheading{
+    display: flex;
+    margin-left: 12px;
+}
+.chart-subheading-text{
+    font-size: 10px;
+    padding-top: 2px
+}
+.button {
+    border-radius: 3px;
+    position: relative;
+    margin-right: 5px;
+    background-color: #f7f8fa;
+    border: none;
+    font-size: 9px;
+    color: #ababab;
+    padding: 6px;
+    width: 50px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    background-color: blue;
+    color: #FFFFFF;
+    transition: 0s
+}
+.chart-subheading-left{
+    display: flex;
+}
+.active{
+    background-color: blue;
+    color: #FFFFFF;
+}
+.chart-view{
+    margin-top: 20px
+}

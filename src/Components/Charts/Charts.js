@@ -8,7 +8,7 @@ const data = [
   { name: 'Page E', uv: 1890, pv: 4800, amt: 2181 },
   { name: 'Page F', uv: 2390, pv: 3800, amt: 2500 },
   { name: 'Page G', uv: 3490, pv: 4300, amt: 2100 },
-  {name: 'Page A', uv: 4000, pv: 2400, amt: 2400 },
+  { name: 'Page A', uv: 4000, pv: 2400, amt: 2400 },
   { name: 'Page B', uv: 3000, pv: 1398, amt: 2210 },
   { name: 'Page D', uv: 2780, pv: 3908, amt: 2000 },
   { name: 'Page E', uv: 1890, pv: 4800, amt: 2181 },
@@ -37,7 +37,7 @@ class Charts extends Component {
           </div>
         </div>
         <div className="chart-view">
-        <LineChart width={window.innerWidth - 60} height={200} data={data}>
+        <LineChart width={window.innerWidth - 120} height={200} data={data}>
           <XAxis allowDataOverflow={true} tickCount={1000} mirror={true} tickLine={false} stroke='#E0E0E0' />
           <YAxis tick={<CustomTickText />} padding={{ top: 30 }} axisLine={false} mirror={true} tickLine={false} stroke='#E0E0E0'/>
           <Tooltip active={true} content={<CustomTooltip />} cursor={<CustomizedCursor />} />

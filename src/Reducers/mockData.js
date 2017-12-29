@@ -18,15 +18,15 @@ export const data = {
         },
         {
 			accountDetail:{
-				cardName:"BitFlinex",
+				cardName:"Bitng",
 				cardNumber:"1BCF **** **** ****",
 				cardText:"BTC/UTC",
 				subText:"Brandon Lucus"
 			},
 			balance:{
-				name:"Test",
-				value:14.0392,
-				subvalue: '$7670.63',
+				name:"ETH",
+				value:8.032,
+				subvalue: '$70.63',
 				valuePer:1.06,
 				revenue:'195',
 				current_order_volume:'3763'
@@ -42,7 +42,7 @@ export const data = {
 			balance:{
 				name:"BTC",
 				value:14.0392,
-				subvalue: '$7670.63',
+				subvalue: '$70.63',
 				valuePer:1.06,
 				revenue:'195',
 				current_order_volume:'3763'
@@ -56,7 +56,7 @@ export const data = {
 				subText:"Brandon Lucus"
 			},
 			balance:{
-				name:"BTC",
+				name:"NEP",
 				value:14.0392,
 				subvalue: '$7670.63',
 				valuePer:1.06,

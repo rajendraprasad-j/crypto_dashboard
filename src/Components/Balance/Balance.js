@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { LineChart, Line } from 'recharts';
+import { connect } from 'react-redux';
 
 import './Balance.css'
 
-const data = [
+const Chartdata = [
   {name: 'Page A', uv: 4000, pv: 2400, amt: 2400},
   {name: 'Page B', uv: 3000, pv: 1398, amt: 2210},
   {name: 'Page D', uv: 2780, pv: 3908, amt: 2000},
@@ -13,13 +14,15 @@ const data = [
 ];
 class Balance extends Component {
   render() {
+    let {currrentAccount ,data} = this.props
+    let curentData = data.accounts[currrentAccount];
     return (
       <div className = "balance_container">
           <div className="sub_titles">Balance</div>
           <div className="readings_container">
             <div className="readings">
-                <div className="btc_text">BTC <span className="btc_value">14.0392</span></div>
-                <div className="btc_text">$7670.63 <span className="value_green">1.06 %</span></div>
+                <div className="btc_text">{curentData.balance.name} <span className="btc_value">{curentData.balance.value}</span></div>
+                <div className="btc_text">{curentData.balance.subvalue} <span className="value_green">{curentData.balance.valuePer}</span></div>
             </div>
             <div className="readings display_flex">
               <div className="options_box">
@@ -37,16 +40,16 @@ class Balance extends Component {
             </div>
             <div className="readings">
               <div className="btc_text">Your today revenue</div>
-              <div className="revenue_text">+ $ <span className="revenue_text_value">195</span></div>
-              <LineChart width={70} height={40} data={data}>
+              <div className="revenue_text">+ $ <span className="revenue_text_value">{curentData.balance.revenue}</span></div>
+              <LineChart width={70} height={40} data={Chartdata}>
                  <Line type='monotone' dataKey='pv' dot={false} stroke='#4CAF50' strokeWidth={1} />
               </LineChart>
               <span className="graph_text">1.06 %</span>
             </div>
             <div className="readings">
               <div className="btc_text">Current order volume</div>
-              <div className="revenue_text"> $ <span className="revenue_text_value">3763</span></div>
-              <LineChart width={70} height={40} data={data}>
+              <div className="revenue_text"> $ <span className="revenue_text_value">{curentData.balance.current_order_volume}</span></div>
+              <LineChart width={70} height={40} data={Chartdata}>
                  <Line type='monotone' dataKey='pv'dot={false} stroke='#4CAF50' strokeWidth={1} />
               </LineChart>
               <span className="graph_text">1.06 %</span>
@@ -57,4 +60,9 @@ class Balance extends Component {
   }
 }
 
-export default Balance;
+function mapStateToProps(state) {
+  const { dashBoardReducers } = state
+  const { currrentAccount ,data} = dashBoardReducers;
+  return { currrentAccount ,data }
+}
+export default connect(mapStateToProps)(Balance);

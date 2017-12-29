@@ -3,20 +3,20 @@ import { headShake } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
+import { connect } from 'react-redux';
+import { sendMessage } from '../../Actions/dashboardActions'
 import "slick-carousel/slick/slick-theme.css";
 import './myaccount.css';
-const styles = {
-  bounce: {
-    animation: 'x 1s',
-    animationName: Radium.keyframes(headShake, 'headShake')
-  }
-}
+
 class MyAccounts extends Component {
-  state={
-    activeCard:0
+
+  changeAccaount(i){
+    let {dispatch} =this.props;
+    dispatch(sendMessage(i));
   }
   render() {
-    var settings = {
+    let {currrentAccount ,data} = this.props
+    let settings = {
       arrows:false,
       focusOnSelect: true,infinite: true,
       slidesToShow: 3,
@@ -25,11 +25,11 @@ class MyAccounts extends Component {
       slidesToScroll: 1
     };
     let self = this;
-    let cardsArray = [1,2,3,4].map(function(item,i){
-      let activeClass = self.state.activeCard === i ? "active-card":""
+    let cardsArray = data.accounts.map(function(item,i){
+      let activeClass = currrentAccount === i ? "active-card":""
       return(
-      <div className={"acc_card_main "+activeClass}>
-      <div className="acc_name" >Bitflinex</div>
+      <div key = {i} className={"acc_card_main "+activeClass}>
+      <div className="acc_name" >{item.accountDetail.cardName}</div>
       <div className="card_number">1BvB **** **** ****</div>
       <div className ="card_add_details">
         <div>BTC\UTC</div>
@@ -41,7 +41,7 @@ class MyAccounts extends Component {
     return (
       <div className="accounts_container">
         <div className="sub_titles_acc">My accounts<span></span></div>
-        <Slider afterChange={(e)=> this.setState({activeCard:e})} {...settings}>
+        <Slider afterChange={(e)=> this.changeAccaount(e)} {...settings}>
         {cardsArray}
        
       </Slider>
@@ -50,4 +50,9 @@ class MyAccounts extends Component {
   }
 }
 
-export default MyAccounts;
+function mapStateToProps(state) {
+  const { dashBoardReducers } = state
+  const { currrentAccount ,data} = dashBoardReducers;
+  return { currrentAccount ,data }
+}
+export default connect(mapStateToProps)(MyAccounts);

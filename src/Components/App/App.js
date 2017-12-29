@@ -22,7 +22,7 @@ class App extends Component {
         <Charts />
       </div>
       <div>
-        {/* <Footer /> */}
+        <Footer /> 
       </div>
       </div>
       

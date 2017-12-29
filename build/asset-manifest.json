@@ -1,13 +1,17 @@
 {
-  "main.css": "static/css/main.5aca9115.css",
-  "main.css.map": "static/css/main.5aca9115.css.map",
-  "main.js": "static/js/main.07e6e398.js",
-  "main.js.map": "static/js/main.07e6e398.js.map",
+  "main.css": "static/css/main.a3d62160.css",
+  "main.css.map": "static/css/main.a3d62160.css.map",
+  "main.js": "static/js/main.f30718d9.js",
+  "main.js.map": "static/js/main.f30718d9.js.map",
   "static\\media\\arrow.svg": "static/media/arrow.91226838.svg",
   "static\\media\\long-arrow-pointing-up.svg": "static/media/long-arrow-pointing-up.7a1b7291.svg",
   "static\\media\\menu.svg": "static/media/menu.401b27a3.svg",
   "static\\media\\more_apps.png": "static/media/more_apps.e4ee48e3.png",
   "static\\media\\profile_pic.jpg": "static/media/profile_pic.c7784b7d.jpg",
   "static\\media\\settings.svg": "static/media/settings.3c4baa93.svg",
+  "static\\media\\slick.eot": "static/media/slick.ced611da.eot",
+  "static\\media\\slick.svg": "static/media/slick.f97e3bbf.svg",
+  "static\\media\\slick.ttf": "static/media/slick.d41f55a7.ttf",
+  "static\\media\\slick.woff": "static/media/slick.b7c9e1e4.woff",
   "static\\media\\speed.svg": "static/media/speed.15944a31.svg"
 }

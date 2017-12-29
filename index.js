@@ -18,7 +18,6 @@ app.use(function (req, res, next) {
     // Pass to next layer of middleware
     next();
 });
-routes(app);
 
 var port = process.env.PORT || 8085;
 app.use(express.static(__dirname + '/build'));
